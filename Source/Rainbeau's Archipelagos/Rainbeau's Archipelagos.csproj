@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" DefaultTargets="Build">
+<Project ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" DefaultTargets="Build">
   <PropertyGroup>
     <ProjectGuid>{9F530883-75FD-40F9-90F8-63ACD545B727}</ProjectGuid>
     <ProjectTypeGuids>{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
@@ -8,7 +8,7 @@
     <OutputType>Library</OutputType>
     <RootNamespace>Rainbeau_s_Archipelagos</RootNamespace>
     <AssemblyName>Rainbeau%27s Archipelagos</AssemblyName>
-    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <TargetFrameworkProfile />
     <NoWin32Manifest>False</NoWin32Manifest>
@@ -45,9 +45,17 @@
     <CheckForOverflowUnderflow>False</CheckForOverflowUnderflow>
     <DefineConstants>TRACE</DefineConstants>
   </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|AnyCPU'">
+    <OutputPath>..\..\Assemblies\</OutputPath>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|AnyCPU'">
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
   <ItemGroup>
     <Reference Include="0Harmony">
-      <HintPath>..\..\Assemblies\0Harmony.dll</HintPath>
+      <HintPath>..\..\..\..\RimWorldWin64_Data\Managed\0Harmony.dll</HintPath>
+      <Private>False</Private>
     </Reference>
     <Reference Include="Assembly-CSharp">
       <HintPath>..\..\..\..\RimWorldWin64_Data\Managed\Assembly-CSharp.dll</HintPath>
@@ -65,9 +73,32 @@
       <HintPath>..\..\..\..\RimWorldWin64_Data\Managed\UnityEngine.dll</HintPath>
       <Private>False</Private>
     </Reference>
+    <Reference Include="UnityEngine.CoreModule">
+      <HintPath>..\..\..\..\RimWorldWin64_Data\Managed\UnityEngine.CoreModule.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="UnityEngine.IMGUIModule">
+      <HintPath>..\..\..\..\RimWorldWin64_Data\Managed\UnityEngine.IMGUIModule.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="MyClass.cs" />
+    <Compile Include="Archipelagos\Archi_Initializer.cs" />
+    <Compile Include="Archipelagos\BiomeWorker_Archipelago_Boreal.cs" />
+    <Compile Include="Archipelagos\BiomeWorker_Archipelago_ColdBog.cs" />
+    <Compile Include="Archipelagos\BiomeWorker_Archipelago_Desert.cs" />
+    <Compile Include="Archipelagos\BiomeWorker_Archipelago_Fresh.cs" />
+    <Compile Include="Archipelagos\BiomeWorker_Archipelago_Temperate.cs" />
+    <Compile Include="Archipelagos\BiomeWorker_Archipelago_TemperateSwamp.cs" />
+    <Compile Include="Archipelagos\BiomeWorker_Archipelago_Tropical.cs" />
+    <Compile Include="Archipelagos\BiomeWorker_Archipelago_TropicalSwamp.cs" />
+    <Compile Include="Archipelagos\BiomeWorker_Archipelago_Tundra.cs" />
+    <Compile Include="Archipelagos\Controller.cs" />
+    <Compile Include="Archipelagos\GenStep_Terrain_TerrainFrom.cs" />
+    <Compile Include="Archipelagos\Settings.cs" />
+    <Compile Include="Archipelagos\WorldGenStep_Lakes_GenerateLakes.cs" />
+    <Compile Include="Archipelagos\WorldGenStep_Terrain_GenerateTileFor.cs" />
+    <Compile Include="Archipelagos\World_CoastDirectionAt.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

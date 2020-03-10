@@ -5,7 +5,7 @@
 		<defName>BorealArchipelago</defName>
 		<label>boreal archipelago</label>
 		<description>A chain of cold, forested islands.</description>
-		<workerClass>RA_Code.BiomeWorker_Archipelago_Boreal</workerClass>
+		<workerClass>Rainbeau_s_Archipelagos.Archipelagos.BiomeWorker_Archipelago_Boreal</workerClass>
 		<implemented>true</implemented>
 		<animalDensity>2.8</animalDensity>
 		<plantDensity>0.36</plantDensity>
@@ -131,7 +131,7 @@
 		<defName>ColdBogArchipelago</defName>
 		<label>cold bog archipelago</label>
 		<description>A chain of cold, marshy islands.</description>
-		<workerClass>RA_Code.BiomeWorker_Archipelago_ColdBog</workerClass>
+		<workerClass>Rainbeau_s_Archipelagos.Archipelagos.BiomeWorker_Archipelago_ColdBog</workerClass>
 		<implemented>true</implemented>
 		<animalDensity>3.3</animalDensity>
 		<plantDensity>0.60</plantDensity>
@@ -264,7 +264,7 @@
 		<defName>DesertArchipelago</defName>
 		<label>desert archipelago</label>
 		<description>A chain of classic (cliche?) desert islands.</description>
-		<workerClass>RA_Code.BiomeWorker_Archipelago_Desert</workerClass>
+		<workerClass>Rainbeau_s_Archipelagos.Archipelagos.BiomeWorker_Archipelago_Desert</workerClass>
 		<animalDensity>1.8</animalDensity>
 		<plantDensity>0.24</plantDensity>
 		<settlementSelectionWeight>0.95</settlementSelectionWeight>
@@ -390,7 +390,7 @@
 		<defName>TemperateArchipelago</defName>
 		<label>temperate archipelago</label>
 		<description>A chain of pleasant, forested islands.</description>
-		<workerClass>RA_Code.BiomeWorker_Archipelago_Temperate</workerClass>
+		<workerClass>Rainbeau_s_Archipelagos.Archipelagos.BiomeWorker_Archipelago_Temperate</workerClass>
 		<animalDensity>3.7</animalDensity>
 		<plantDensity>0.65</plantDensity>
 		<settlementSelectionWeight>1</settlementSelectionWeight>
@@ -522,7 +522,7 @@
 		<defName>TemperateSwampArchipelago</defName>
 		<label>temperate swamp archipelago</label>
 		<description>A chain of temperate swampy islands.</description>
-		<workerClass>RA_Code.BiomeWorker_Archipelago_TemperateSwamp</workerClass>
+		<workerClass>Rainbeau_s_Archipelagos.Archipelagos.BiomeWorker_Archipelago_TemperateSwamp</workerClass>
 		<animalDensity>4.3</animalDensity>
 		<plantDensity>0.80</plantDensity>
 		<settlementSelectionWeight>0.6</settlementSelectionWeight>
@@ -657,7 +657,7 @@
 		<defName>TropicalArchipelago</defName>
 		<label>tropical archipelago</label>
 		<description>A chain of tropical islands.</description>
-		<workerClass>RA_Code.BiomeWorker_Archipelago_Tropical</workerClass>
+		<workerClass>Rainbeau_s_Archipelagos.Archipelagos.BiomeWorker_Archipelago_Tropical</workerClass>
 		<animalDensity>5.4</animalDensity>
 		<plantDensity>0.90</plantDensity>
 		<settlementSelectionWeight>0.7</settlementSelectionWeight>
@@ -789,7 +789,7 @@
 		<defName>TropicalSwampArchipelago</defName>
 		<label>tropical swamp archipelago</label>
 		<description>A chain of swampy tropical islands.</description>
-		<workerClass>RA_Code.BiomeWorker_Archipelago_TropicalSwamp</workerClass>
+		<workerClass>Rainbeau_s_Archipelagos.Archipelagos.BiomeWorker_Archipelago_TropicalSwamp</workerClass>
 		<animalDensity>6.5</animalDensity>
 		<plantDensity>0.99</plantDensity>
 		<settlementSelectionWeight>0.4</settlementSelectionWeight>
@@ -925,7 +925,7 @@
 		<defName>TundraArchipelago</defName>
 		<label>tundra archipelago</label>
 		<description>A chain of cold, desolate islands.</description>
-		<workerClass>RA_Code.BiomeWorker_Archipelago_Tundra</workerClass>
+		<workerClass>Rainbeau_s_Archipelagos.Archipelagos.BiomeWorker_Archipelago_Tundra</workerClass>
 		<implemented>true</implemented>
 		<animalDensity>1.1</animalDensity>
 		<plantDensity>0.19</plantDensity>
@@ -1044,49 +1044,49 @@
 	<BiomeDef ParentName="BorealArchipelago">
 		<defName>BorealArchipelago_Fresh</defName>
 		<label>boreal archipelago (lake)</label>
-		<workerClass>RA_Code.BiomeWorker_Archipelago_Fresh</workerClass>
+		<workerClass>Rainbeau_s_Archipelagos.Archipelagos.BiomeWorker_Archipelago_Fresh</workerClass>
 	</BiomeDef>
 
 	<BiomeDef ParentName="ColdBogArchipelago">
 		<defName>ColdBogArchipelago_Fresh</defName>
 		<label>cold bog archipelago (lake)</label>
-		<workerClass>RA_Code.BiomeWorker_Archipelago_Fresh</workerClass>
+		<workerClass>Rainbeau_s_Archipelagos.Archipelagos.BiomeWorker_Archipelago_Fresh</workerClass>
 	</BiomeDef>
 
 	<BiomeDef ParentName="DesertArchipelago">
 		<defName>DesertArchipelago_Fresh</defName>
 		<label>desert archipelago (lake)</label>
-		<workerClass>RA_Code.BiomeWorker_Archipelago_Fresh</workerClass>
+		<workerClass>Rainbeau_s_Archipelagos.Archipelagos.BiomeWorker_Archipelago_Fresh</workerClass>
 	</BiomeDef>
 
 	<BiomeDef ParentName="TemperateArchipelago">
 		<defName>TemperateArchipelago_Fresh</defName>
 		<label>temperate archipelago (lake)</label>
-		<workerClass>RA_Code.BiomeWorker_Archipelago_Fresh</workerClass>
+		<workerClass>Rainbeau_s_Archipelagos.Archipelagos.BiomeWorker_Archipelago_Fresh</workerClass>
 	</BiomeDef>
 
 	<BiomeDef ParentName="TemperateSwampArchipelago">
 		<defName>TemperateSwampArchipelago_Fresh</defName>
 		<label>temperate swamp archipelago (lake)</label>
-		<workerClass>RA_Code.BiomeWorker_Archipelago_Fresh</workerClass>
+		<workerClass>Rainbeau_s_Archipelagos.Archipelagos.BiomeWorker_Archipelago_Fresh</workerClass>
 	</BiomeDef>
 
 	<BiomeDef ParentName="TropicalArchipelago">
 		<defName>TropicalArchipelago_Fresh</defName>
 		<label>tropical archipelago (lake)</label>
-		<workerClass>RA_Code.BiomeWorker_Archipelago_Fresh</workerClass>
+		<workerClass>Rainbeau_s_Archipelagos.Archipelagos.BiomeWorker_Archipelago_Fresh</workerClass>
 	</BiomeDef>
 
 	<BiomeDef ParentName="TropicalSwampArchipelago">
 		<defName>TropicalSwampArchipelago_Fresh</defName>
 		<label>tropical swamp archipelago (lake)</label>
-		<workerClass>RA_Code.BiomeWorker_Archipelago_Fresh</workerClass>
+		<workerClass>Rainbeau_s_Archipelagos.Archipelagos.BiomeWorker_Archipelago_Fresh</workerClass>
 	</BiomeDef>
 
 	<BiomeDef ParentName="TundraArchipelago">
 		<defName>TundraArchipelago_Fresh</defName>
 		<label>tundra archipelago (lake)</label>
-		<workerClass>RA_Code.BiomeWorker_Archipelago_Fresh</workerClass>
+		<workerClass>Rainbeau_s_Archipelagos.Archipelagos.BiomeWorker_Archipelago_Fresh</workerClass>
 	</BiomeDef>
 	
 </Defs>
